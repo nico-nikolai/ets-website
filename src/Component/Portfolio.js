@@ -12,13 +12,12 @@ import Gallery_5 from '../Assets/Images/gallery/img-5.jpg';
 import Gallery_6 from '../Assets/Images/gallery/img-6.jpg';
 
 
-class Porfolio extends Component {
+class Portfolio extends Component {
 
     state = {
-        onWebDesign: false,
-        onPrintDesign: false,
-        onWebApp: false,
-        onPhotography: false,
+        onConcertLighting: false,
+        onPermanentInstallation: false,
+        onFestivalLighting: false,
         isOpen : false,
     }
 
@@ -27,59 +26,45 @@ class Porfolio extends Component {
         const allElement = event => {
             event.preventDefault();
             this.setState({
-                onWebApp: true,
-                onPrintDesign: true,
+                onFestivalLighting: true,
+                onPermanentInstallation: true,
                 onWebDesign: true,
-                onPhotography: true,
             });
         }
 
-        const webDesign = event => {
+        const concertLighting = event => {
             event.preventDefault();
             this.setState({
-                onWebDesign: true,
-                onPrintDesign: false,
-                onWebApp: false,
+                onConcertLighting: true,
+                onpermanentInstallation: false,
+                onFestivalLighting: false,
+                isOpen: true,
+            });
+        }
+
+        const permanentInstallation = event => {
+            event.preventDefault();
+            this.setState({
+                onPermanentInstallation: true,
+                onConcertLighting: false,
+                onFestivalLighting: false,
+                isOpen: true,
+            });
+        }
+
+        const festivalLighting = event => {
+            event.preventDefault();
+            this.setState({
+                onFestivalLighting: true,
+                onPermanentInstallation: false,
+                onConcertLighting: false,
                 onPhotography: false,
                 isOpen: true,
             });
         }
 
-        const printDesign = event => {
-            event.preventDefault();
-            this.setState({
-                onPrintDesign: true,
-                onWebDesign: false,
-                onWebApp: false,
-                onPhotography: false,
-                isOpen: true,
-            });
-        }
 
-        const webApp = event => {
-            event.preventDefault();
-            this.setState({
-                onWebApp: true,
-                onPrintDesign: false,
-                onWebDesign: false,
-                onPhotography: false,
-                isOpen: true,
-            });
-        }
-
-        const Photography = event => {
-            event.preventDefault();
-            this.setState({
-                onPhotography: true,
-                onWebApp: false,
-                onPrintDesign: false,
-                onWebDesign: false,
-                isOpen: true,
-            });
-        }
-
-
-        console.log(this.state.onWebDesign);
+        console.log(this.state.onConcertLighting);
 
         return (
             <section id="protfolio" className="gallery-section section-padding">
@@ -92,16 +77,15 @@ class Porfolio extends Component {
                                 </div>
                                 <ul>
                                     <li><a data-filter="*" href="#" className="current" onClick={allElement}>All</a></li>
-                                    <li><a data-filter=".Web-Design" href="#" onClick={webDesign}>Web Design</a></li>
-                                    <li><a data-filter=".Print-Design" href="#" onClick={printDesign}>Print Design</a></li>
-                                    <li><a data-filter=".Web-Application" href="#" onClick={webApp}>Web Application</a></li>               
-                                    <li><a data-filter=".Photography" href="#" onClick={Photography}>Photography</a></li> 
+                                    <li><a data-filter=".Concert-Lighting" href="#" onClick={concertLighting}>Concert Lighting</a></li>
+                                    <li><a data-filter=".Permanent-Installation" href="#" onClick={permanentInstallation}>Installs</a></li>
+                                    <li><a data-filter=".Festival-Lighting" href="#" onClick={festivalLighting}>Festivals</a></li>               
                                 </ul>
                             </div>
                             <div className="gallery-container gallery-fancybox masonry-gallery tumho-masonary">
                                
-                                <div className={this.state.onPrintDesign ? "grid active" : "grid"
-                                    && this.state.onWebApp ? "grid active" : "grid"
+                                <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
+                                    && this.state.onFestivalLighting ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"
                                     }>
                                    <img src={Gallery_1} className="img img-responsive" alt="" />
@@ -111,9 +95,9 @@ class Porfolio extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={this.state.onWebDesign ? "grid active" : "grid" 
-                                    && this.state.onPrintDesign ? "grid active" : "grid"
-                                    && this.state.onWebApp ? "grid active" : "grid"
+                                <div className={this.state.onConcertLighting ? "grid active" : "grid" 
+                                    && this.state.onPermanentInstallation ? "grid active" : "grid"
+                                    && this.state.onFestivalLighting ? "grid active" : "grid"
                                     && this.state.onPhotography ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                         
@@ -124,8 +108,8 @@ class Porfolio extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={this.state.onWebDesign ? "grid active" : "grid"
-                                    && this.state.onWebApp ? "grid active" : "grid"
+                                <div className={this.state.onConcertLighting ? "grid active" : "grid"
+                                    && this.state.onFestivalLighting ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     
                                     <img src={Gallery_6} alt="" className="img img-responsive"/>
@@ -135,7 +119,7 @@ class Porfolio extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={this.state.onPrintDesign ? "grid active" : "grid"
+                                <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
                                     && this.state.onPhotography ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_5} alt="" className="img img-responsive"/>
@@ -145,7 +129,7 @@ class Porfolio extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={this.state.onPrintDesign ? "grid active" : "grid"
+                                <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
                                     && this.state.onPhotography ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     
@@ -156,8 +140,8 @@ class Porfolio extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={this.state.onPrintDesign ? "grid active" : "grid"
-                                    && this.state.onWebApp ? "grid active" : "grid"
+                                <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
+                                    && this.state.onFestivalLighting ? "grid active" : "grid"
                                     && this.state.onPhotography ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_4} alt="" className="img img-responsive"/>
@@ -176,4 +160,4 @@ class Porfolio extends Component {
     }
 }
 
-export default Porfolio;
+export default Portfolio;

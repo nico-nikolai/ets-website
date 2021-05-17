@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebookF, faTwitter, faInstagram, faPinterestP, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { fab, faFacebookF, faTwitter, faInstagram, faPinterestP, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Logo from '../Assets/Images/logo.png';
+import Logo from '../Assets/Images/logo.jpg';
 
 class Footer extends Component {
     render() {
@@ -37,7 +37,7 @@ class Footer extends Component {
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <FontAwesomeIcon icon={faPinterestP} />
+                                            <FontAwesomeIcon icon={faLinkedinIn} />
                                         </a>
                                     </li>
                                     <li>
@@ -50,7 +50,7 @@ class Footer extends Component {
                         </div>
                         <div className="col-12">
                             <div className="footer-sub">
-                                <p><i className="fa fa-copyright"></i>Copyright - 2020<span> Developed by AutWorks</span></p>
+                                <p><i className="fa fa-copyright"></i>Copyright - 2021<span> All Rights Reserved</span></p>
                             </div>
                         </div>
                     </div>

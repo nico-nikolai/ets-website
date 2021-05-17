@@ -19,7 +19,7 @@ class Banner extends Component {
                                         <h4>We are ETS</h4>
                                     </div>
                                     <div className="slide-title">
-                                        <h2>Concert Lighting</h2>
+                                        <h2>Light That Shit Up!</h2>
                                     </div>
                                     <div className="btns">
                                         <a href="#contact" className="theme-btn go-contact-area">Contact Us</a>
@@ -29,7 +29,7 @@ class Banner extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="copy"><p>Creative Designer And Developer</p></div>
+                <div className="copy"><p>Lighting Design and Implementation</p></div>
                 <div className="social-links">
                     <ul>
                         <li>

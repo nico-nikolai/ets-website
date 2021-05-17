@@ -14,7 +14,6 @@ class Service extends Component {
                 <div className="container">
                     <div className="col-12">
                         <div className="section-title text-center">
-                            <span>What We Do</span>
                             <h2>Our Services</h2>
                         </div>
                     </div>

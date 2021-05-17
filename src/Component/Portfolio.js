@@ -18,6 +18,7 @@ class Portfolio extends Component {
         onConcertLighting: false,
         onPermanentInstallation: false,
         onFestivalLighting: false,
+        onDesign: false,
         isOpen : false,
     }
 
@@ -29,6 +30,7 @@ class Portfolio extends Component {
                 onFestivalLighting: true,
                 onPermanentInstallation: true,
                 onWebDesign: true,
+                onDesign: true
             });
         }
 
@@ -38,6 +40,7 @@ class Portfolio extends Component {
                 onConcertLighting: true,
                 onpermanentInstallation: false,
                 onFestivalLighting: false,
+                onDesign: false,
                 isOpen: true,
             });
         }
@@ -48,6 +51,7 @@ class Portfolio extends Component {
                 onPermanentInstallation: true,
                 onConcertLighting: false,
                 onFestivalLighting: false,
+                onDesign: false,
                 isOpen: true,
             });
         }
@@ -58,9 +62,20 @@ class Portfolio extends Component {
                 onFestivalLighting: true,
                 onPermanentInstallation: false,
                 onConcertLighting: false,
-                onPhotography: false,
+                onDesign: false,
                 isOpen: true,
             });
+        }
+
+        const design = event => {
+            event.preventDefault();
+            this.setState({
+                onFestivalLighting: false,
+                onPermanentInstallation: false,
+                onConcertLighting: false,
+                onDesign: true,
+                isOpen: true,
+            })
         }
 
 
@@ -79,7 +94,8 @@ class Portfolio extends Component {
                                     <li><a data-filter="*" href="#" className="current" onClick={allElement}>All</a></li>
                                     <li><a data-filter=".Concert-Lighting" href="#" onClick={concertLighting}>Concert Lighting</a></li>
                                     <li><a data-filter=".Permanent-Installation" href="#" onClick={permanentInstallation}>Installs</a></li>
-                                    <li><a data-filter=".Festival-Lighting" href="#" onClick={festivalLighting}>Festivals</a></li>               
+                                    <li><a data-filter=".Festival-Lighting" href="#" onClick={festivalLighting}>Festivals</a></li>
+                                    <li><a data-filter=".Design" href="#" onClick={design}>Design</a></li>            
                                 </ul>
                             </div>
                             <div className="gallery-container gallery-fancybox masonry-gallery tumho-masonary">
@@ -98,7 +114,7 @@ class Portfolio extends Component {
                                 <div className={this.state.onConcertLighting ? "grid active" : "grid" 
                                     && this.state.onPermanentInstallation ? "grid active" : "grid"
                                     && this.state.onFestivalLighting ? "grid active" : "grid"
-                                    && this.state.onPhotography ? "grid active" : "grid"
+                                    && this.state.onDesign ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                         
                                     <img src={Gallery_2} alt="" className="img img-responsive"/>
@@ -120,7 +136,7 @@ class Portfolio extends Component {
                                     </div>
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
-                                    && this.state.onPhotography ? "grid active" : "grid"
+                                    && this.state.onDesign ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_5} alt="" className="img img-responsive"/>
                                     <div className="icon">
@@ -130,7 +146,7 @@ class Portfolio extends Component {
                                     </div>
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
-                                    && this.state.onPhotography ? "grid active" : "grid"
+                                    && this.state.onDesign ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     
                                     <img src={Gallery_3} alt="" className="img img-responsive"/>
@@ -142,7 +158,7 @@ class Portfolio extends Component {
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
                                     && this.state.onFestivalLighting ? "grid active" : "grid"
-                                    && this.state.onPhotography ? "grid active" : "grid"
+                                    && this.state.onDesign ? "grid active" : "grid"
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_4} alt="" className="img img-responsive"/>
                                     <div className="icon">

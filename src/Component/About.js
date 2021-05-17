@@ -17,7 +17,7 @@ class About extends Component {
                                 <p>There isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary you need to be sure</p>
                                 
                                 <div className="btns">
-                                    <a href="#" className="theme-btn">Our Story</a>
+                                    <a href="#" className="theme-btn">Meet Our Team</a>
                                 </div>
                             </div>
                         </div>

@@ -88,8 +88,7 @@ class Porfolio extends Component {
                         <div className="col col-xs-12 sortable-gallery">
                             <div className="gallery-filters">
                                 <div className="section-title">
-                                    <span>Portfolio</span>
-                                    <h2>Work I Have Done</h2>
+                                    <h2>Examples of Our Work</h2>
                                 </div>
                                 <ul>
                                     <li><a data-filter="*" href="#" className="current" onClick={allElement}>All</a></li>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { library } from '@fortawesome/fontawesome-svg-core';
+// import ReactDOM from 'react-dom';
+// import { library } from '@fortawesome/fontawesome-svg-core';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { fab, faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons';
+// import { fab, faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Gallery_1 from '../Assets/Images/gallery/img-1.jpg';
 import Gallery_2 from '../Assets/Images/gallery/img-2.jpg';
@@ -82,7 +82,7 @@ class Portfolio extends Component {
         console.log(this.state.onConcertLighting);
 
         return (
-            <section id="protfolio" className="gallery-section section-padding">
+            <section id="portfolio" className="gallery-section section-padding">
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12 sortable-gallery">

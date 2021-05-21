@@ -49,7 +49,7 @@ class Service extends Component {
                                         <img src={serviceImg_3}/>
                                     </div>
                                     <div className="hx-service-content">
-                                        <h3>Test</h3>
+                                        <h3>Install</h3>
                                     </div>
                                 </div>
                             </div>

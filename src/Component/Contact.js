@@ -9,26 +9,25 @@ class Contact extends Component {
             <div id="contact" className="contact-page-area section-padding go-contact-area">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-5 col-md-5 col-sm-5">
+                        <div className="col-lg col-md col-sm">
                             <div className="contact-page-item">
-                                <h2>My Contacts</h2>
+                                <h1>Contact Us</h1>
                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                                <div className="adress">
+                                <div className="address">
                                     <h3>Address</h3>
-                                    <span>245 King Street, Touterie Victoria 8520 Australia</span>
+                                    <span>2523 Comanche Rd NE, Albuquerque, NM 87107</span>
                                 </div>
                                 <div className="phone">
                                     <h3>Phone</h3>
-                                    <span>0-123-456-7890</span>
-                                    <span>0-123-456-7890</span>
+                                    <span><a role="button" className="btn btn-link" href="tel:+15056040050"><i className="fa fa-phone" />505-604-0050</a></span>
                                 </div>
                                 <div className="email">
                                     <h3>Email</h3>
-                                    <span>sample@gmail.com</span>
+                                    <span><a role="button" className="btn btn-link" href="mailto:ekld@aol.com"><i className="fa fa-envelope-o" />ekld@aol.com</a></span>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-7 col-md-7 col-sm-7">
+                        {/* <div className="col-lg-7 col-md-7 col-sm-7">
                             <div className="contact-area contact-area-2 contact-area-3">
                                 <h2>Quick Contact Form</h2>
                                 <div className="contact-form">
@@ -61,7 +60,7 @@ class Contact extends Component {
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row">
                         <div className="col col-xs-12">

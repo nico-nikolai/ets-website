@@ -1720,6 +1720,9 @@ page loader
     margin-bottom: 30px;
 }
 
+.modal {
+  padding-top: 100px;
+}
 /*=======================================
 0.8 testimonial-area start
 =========================================*/

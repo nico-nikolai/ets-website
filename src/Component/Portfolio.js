@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 // import { fab, faFacebook, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button, Modal, ModalBody, ModalHeader } from 'reactstrap';
 import Gallery_1 from '../Assets/Images/gallery/img-1.jpg';
 import Gallery_2 from '../Assets/Images/gallery/img-2.jpg';
 import Gallery_3 from '../Assets/Images/gallery/img-3.jpg';
@@ -13,13 +14,24 @@ import Gallery_6 from '../Assets/Images/gallery/img-6.jpg';
 
 
 class Portfolio extends Component {
-
-    state = {
+    constructor(props) {
+        super(props);
+ 
+    this.state = {
         onConcertLighting: false,
         onPermanentInstallation: false,
         onFestivalLighting: false,
         onDesign: false,
-        isOpen : false,
+        isOpen: false,
+        isModalOpen: false
+    }
+    this.toggleModal = this.toggleModal.bind(this);
+}
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        })
     }
 
     render() {
@@ -78,7 +90,6 @@ class Portfolio extends Component {
             })
         }
 
-
         console.log(this.state.onConcertLighting);
 
         return (
@@ -106,9 +117,18 @@ class Portfolio extends Component {
                                     }>
                                    <img src={Gallery_1} className="img img-responsive" alt="" />
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                        <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={this.state.onConcertLighting ? "grid active" : "grid" 
@@ -119,9 +139,18 @@ class Portfolio extends Component {
                                         
                                     <img src={Gallery_2} alt="" className="img img-responsive"/>
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                    <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={this.state.onConcertLighting ? "grid active" : "grid"
@@ -130,9 +159,18 @@ class Portfolio extends Component {
                                     
                                     <img src={Gallery_6} alt="" className="img img-responsive"/>
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                    <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
@@ -140,9 +178,18 @@ class Portfolio extends Component {
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_5} alt="" className="img img-responsive"/>
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                    <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
@@ -151,9 +198,18 @@ class Portfolio extends Component {
                                     
                                     <img src={Gallery_3} alt="" className="img img-responsive"/>
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                    <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={this.state.onPermanentInstallation ? "grid active" : "grid"
@@ -162,9 +218,18 @@ class Portfolio extends Component {
                                     && this.state.isOpen ? "grid" : "grid open"}>
                                     <img src={Gallery_4} alt="" className="img img-responsive"/>
                                     <div className="icon">
-                                        <a href="#" className="view-icon">
+                                    <Button onClick={this.toggleModal} className="view-icon">
                                             <FontAwesomeIcon icon={faPlus} />
-                                        </a>
+                                        </Button>
+                                        {""}
+                                        <div className="modal">
+                                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                                <ModalHeader toggle={this.toggleModal}>Caption / Title</ModalHeader>
+                                                <ModalBody>
+                                                    <img src={Gallery_1} alt="" />
+                                                </ModalBody>
+                                            </Modal>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

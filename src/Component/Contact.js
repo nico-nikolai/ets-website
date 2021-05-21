@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 class Contact extends Component {
     
@@ -19,11 +22,11 @@ class Contact extends Component {
                                 </div>
                                 <div className="phone">
                                     <h3>Phone</h3>
-                                    <span><a role="button" className="btn btn-link" href="tel:+15056040050"><i className="fa fa-phone" />505-604-0050</a></span>
+                                    <span><a role="button" className="btn btn-link" href="tel:+15056040050"><FontAwesomeIcon icon={faPhone} /> 505-604-0050</a></span>
                                 </div>
                                 <div className="email">
                                     <h3>Email</h3>
-                                    <span><a role="button" className="btn btn-link" href="mailto:ekld@aol.com"><i className="fa fa-envelope-o" />ekld@aol.com</a></span>
+                                    <span><a role="button" className="btn btn-link" href="mailto:ekld@aol.com"><FontAwesomeIcon icon={faEnvelope} /> ekld@aol.com</a></span>
                                 </div>
                             </div>
                         </div>

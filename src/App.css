@@ -1342,7 +1342,7 @@ button:focus {
 .sticky-on {
   opacity: 1;
   top: 0;
-  visibility: hidden;
+  visibility: collapse;
 }
 
 .header-style-1 .sticky-header {
@@ -1440,7 +1440,7 @@ page loader
 .carousel-box {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 20px;
   margin-bottom: auto;
 }
 
@@ -1612,7 +1612,7 @@ page loader
 /*--------------------------------------------------------------
 0.7 portfolio-section
 --------------------------------------------------------------*/
-.gallery-section {
+/* .gallery-section {
   padding-bottom: 70px;
 }
 
@@ -1775,7 +1775,7 @@ page loader
 /*=======================================
 0.8 testimonial-area start
 =========================================*/
-.testimonial-area {
+/*.testimonial-area {
     padding: 100px 0 60px;
     background: #202020;
 }
@@ -1874,7 +1874,7 @@ page loader
 /*====================================
 0.9 pricing-section start
 ======================================*/
-.pricing-area {
+/* .pricing-area {
     position: relative;
     padding: 100px 0 70px;
 }
@@ -2027,11 +2027,11 @@ page loader
 
 .pricing-table-2 ul{
   margin-top: 30px;
-}
-/*--------------------------------------------------------------
+} */ 
+/*------------------------------
  1.0  blog-section
 --------------------------------------------------------------*/
-.blog-section {
+/* .blog-section {
   padding-bottom: 90px;
   background: #202020;
 }
@@ -2169,7 +2169,7 @@ page loader
 }
 .entry-media img{
   width: 100%;
-}
+} */
 /*===================================================
 1.1 contact-area start
 =======================================================*/
@@ -2592,7 +2592,7 @@ border-radius: 0px;
   animation-name: fadeInDown;
 }
 .fixed-navbar.active .site-header.header-style-1{
-  position: fixed;
+  position: static;
   z-index: 555;
   top: 0;
   left: 0;

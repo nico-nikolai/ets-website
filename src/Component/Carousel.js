@@ -246,18 +246,17 @@ export default class Carousel extends Component {
       },
     ];
     return (
-      <div id="gallery">
-        <div className="">
-        <div className="">
-        <h1 className="gallery-title">Gallery</h1>
+      <div>
+        <div id="gallery">
+          <h1 className="gallery-title">Gallery</h1>
         </div>
-        </div>
+
         <div className="carousel-box">
-          <div className="">
-          <div className="carousel-images">
-            <UncontrolledCarousel items={slides} />
-          </div>
-          </div>
+         
+            <div className="carousel-images">
+              <UncontrolledCarousel items={slides} />
+            </div>
+          
         </div>
       </div>
     );

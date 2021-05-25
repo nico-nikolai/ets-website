@@ -1,13 +1,28 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+    .hx-about-style-1 .hx-about-img {
+        display: none;
+    }
+    .hero-style-1 .slide {
+        height: auto;
+        min-height: 600px;
+    }
+    .hero-style-1 {
+        height: auto;
+        min-height: auto;
+    }
+    .hero .slide-caption {
+        padding: 120px 0;
+    }
 }
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hx-about-style-1 .hx-about-img {
         display: none;
     }
     .hero-style-1 .slide {
         height: auto;
-        min-height: auto;
+        min-height: 600px;
     }
     .hero-style-1 {
         height: auto;
@@ -54,7 +69,7 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/header-slides/BMFL\ Snoop4.png') 20% center no-repeat;
         background-size: cover;
     }
     .header-style-1 .navbar-header button {
@@ -171,7 +186,7 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/header-slides/BMFL\ Snoop4.png') 20% center no-repeat;
         background-size: cover;
     }
     .header-style-1 .navbar-header button {
@@ -272,7 +287,7 @@
         display: none;
     }
     .hero-style-1 .slide {
-        background: url('../Images/slide-2.jpg') 20% center no-repeat;
+        background: url('../Images/header-slides/BMFL\ Snoop4.png') 20% center no-repeat;
         background-size: cover;
     }
     .header-style-1 .navbar-header button {

@@ -4,8 +4,8 @@ import About from './Component/About';
 import Service from './Component/Service';
 import Contact from './Component/Contact';
 import Footer from './Component/Footer';
-import Testimonial from './Component/Testimonial';
-import Portfolio from './Component/Portfolio';
+// import Testimonial from './Component/Testimonial';
+// import Portfolio from './Component/Portfolio';
 import Navbar from './Component/Navbar';
 import Carousel from './Component/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,8 +21,6 @@ function App() {
             <Carousel />
             <About/>
             <Service/>
-            <Portfolio/>
-            <Testimonial/>
             <Contact/>
             <Footer/>
         </div>

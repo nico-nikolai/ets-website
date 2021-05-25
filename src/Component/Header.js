@@ -46,6 +46,11 @@ class Header extends Component {
                                         <img src={Home_1} alt=""/>
                                     </a>
                                 </li>
+                                <li className="gallery">
+                                    <a href="#gallery">
+                                        <img src={Home_5} alt="" />
+                                    </a>
+                                </li>
                                 <li className="about">
                                     <a href="#about">
                                         <img src={Home_2} alt=""/>
@@ -56,11 +61,11 @@ class Header extends Component {
                                         <img src={Home_3} alt=""/>
                                     </a>
                                 </li>
-                                <li className="portfolio">
+                                {/* <li className="portfolio">
                                     <a href="#portfolio">
                                         <img src={Home_4} alt=""/>
                                     </a>
-                                </li>
+                                </li> */}
                                 {/* <li className="blog">
                                     <a href="#blog">
                                         <img src={Home_5} alt=""/>

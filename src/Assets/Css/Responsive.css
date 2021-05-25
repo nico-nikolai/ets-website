@@ -1,4 +1,4 @@
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .hx-about-style-1 .hx-about-img {
         display: none;
     }
@@ -13,7 +13,7 @@
     .hero .slide-caption {
         padding: 120px 0;
     }
-}
+} */
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

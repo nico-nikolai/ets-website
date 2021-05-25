@@ -246,10 +246,10 @@ export default class Carousel extends Component {
       },
     ];
     return (
-      <div className="">
+      <div id="gallery">
         <div className="">
         <div className="">
-        <h2 className="gallery-title">Gallery</h2>
+        <h1 className="gallery-title">Gallery</h1>
         </div>
         </div>
         <div className="carousel-box">

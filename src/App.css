@@ -1434,6 +1434,32 @@ page loader
   }
 }
 /*==============================
+0.5 gallery-area
+===============================*/
+
+
+
+.carousel-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin-bottom: 310px;
+}
+
+.gallery-title {
+  color: white;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-images {
+  width: 1000px;
+  height: auto;
+
+}
+
+/*==============================
 0.5 about-area
 ===============================*/
 .hx-about-style-1 {

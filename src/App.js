@@ -7,6 +7,7 @@ import Footer from './Component/Footer';
 import Testimonial from './Component/Testimonial';
 import Portfolio from './Component/Portfolio';
 import Navbar from './Component/Navbar';
+import Carousel from './Component/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Assets/Css/Responsive.css';
@@ -17,6 +18,7 @@ function App() {
         <div className="App">
             <Navbar />
             <Banner/>
+            <Carousel />
             <About/>
             <Service/>
             <Portfolio/>

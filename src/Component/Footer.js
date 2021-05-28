@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebookF, faTwitter, faInstagram, faPinterestP, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+// import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFacebookF, faTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Logo from '../Assets/Images/logo.jpg';
 
@@ -13,7 +13,7 @@ class Footer extends Component {
                         <div className="col-12">
                             <div className="footer-image">
                                 <a href="index.html">
-                                    <img src={Logo}/>
+                                    <img src={Logo} alt="ETS Logo"/>
                                 </a>
                             </div>
                         </div>
@@ -21,30 +21,30 @@ class Footer extends Component {
                             <div className="footer-menu">
                                 <ul className="d-flex " >
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/etslites/" target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faFacebookF} />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://twitter.com/ekld1/" target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faTwitter} />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/ekldnm/" target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faInstagram} />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/eric-kennedy-923292b/" target="_blank" rel="noopener noreferrer">
                                             <FontAwesomeIcon icon={faLinkedinIn} />
                                         </a>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <a href="#">
                                             <FontAwesomeIcon icon={faYoutube} />
                                         </a>    
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>

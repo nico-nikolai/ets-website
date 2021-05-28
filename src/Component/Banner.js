@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { faFacebook, faAccessibleIcon, faFacebookF, faTwitter, faInstagram, faPinterest, faPinterestP, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeaderImg from "../Assets/Images/header-slides/BMFL Snoop4.png"
@@ -12,7 +12,7 @@ class Banner extends Component {
                 <div className="hero-slider">
                     <div className="slide">
                         <div className="slider-image">
-                            <img src={HeaderImg} />
+                            <img src={HeaderImg} alt="Snoop Dog in Concert"/>
                         </div>
                         <div className="container">
                             <div className="row">
@@ -35,22 +35,22 @@ class Banner extends Component {
                 <div className="social-links">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/etslites/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faFacebookF} />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/ekld1/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/ekldnm/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/eric-kennedy-923292b/" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
                         </li>

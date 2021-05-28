@@ -246,12 +246,12 @@ button:focus {
 /*--------------------------------------------------------------
  header
 --------------------------------------------------------------*/
-.site-header {
+/* .site-header {
   /* navigation open and close btn hide for width screen */
   /* style for navigation less than 992px */
   /*navbar collaps less then 992px*/
-  /*** cart-search-contact ***/
-}
+  /*** cart-search-contact
+} */ 
 
 .site-header .navigation {
   background-color: transparent;
@@ -289,9 +289,9 @@ button:focus {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
+  /* .site-header #navbar {
+    /*** hover effect 
+  } */
   .site-header #navbar li {
     position: relative;
   }
@@ -395,9 +395,9 @@ button:focus {
 }
 
 @media screen and (min-width: 992px) {
-  .site-header #navbar {
-    /*** hover effect ***/
-  }
+  /* .site-header #navbar {
+    /*** hover effect 
+  } */
   .site-header #navbar .has-mega-menu {
     position: static;
   }
@@ -498,9 +498,9 @@ button:focus {
 }
 
 @media (max-width: 991px) {
-  .site-header {
-    /* class for show hide navigation */
-  }
+  /* .site-header {
+    /* class for show hide navigation
+  } */
   .site-header .container {
     width: 100%;
   }
@@ -619,9 +619,9 @@ button:focus {
 /*******************************************
 0.2	header-style 1
 *******************************************/
-.header-style-1 {
-  /*** .cart-search-contact ***/
-}
+/* .header-style-1 {
+  /*** .cart-search-contact 
+} */
 
 @media screen and (min-width: 992px) {
 .header-style-1 {
@@ -2564,9 +2564,9 @@ border-radius: 0px;
 .navigation-holder .navbar-nav {
   display: block;
 }
-.site-header #navbar {
-  /* position: relative; */
-}
+/* .site-header #navbar {
+  /* position: relative; 
+} */
 .header-style-1 #navbar > ul {
   position: relative;
   overflow-x: hidden;

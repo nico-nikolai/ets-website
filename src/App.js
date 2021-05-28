@@ -9,6 +9,7 @@ import Partners from './Component/Partners';
 // import Portfolio from './Component/Portfolio';
 import Navbar from './Component/Navbar';
 import Carousel from './Component/Carousel';
+import Manifest from './Component/Manifest';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Assets/Css/Responsive.css';
@@ -22,6 +23,7 @@ function App() {
             <Carousel />
             <About/>
             <Service/>
+            <Manifest/>
             <Partners />
             <Contact/>
             <Footer/>

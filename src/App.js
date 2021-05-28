@@ -4,6 +4,7 @@ import About from './Component/About';
 import Service from './Component/Service';
 import Contact from './Component/Contact';
 import Footer from './Component/Footer';
+import Partners from './Component/Partners';
 // import Testimonial from './Component/Testimonial';
 // import Portfolio from './Component/Portfolio';
 import Navbar from './Component/Navbar';
@@ -21,6 +22,7 @@ function App() {
             <Carousel />
             <About/>
             <Service/>
+            <Partners />
             <Contact/>
             <Footer/>
         </div>

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Home_1 from '../Assets/Images/header-slides/CHRIS STAPLEON.jpg';
 import Home_2 from '../Assets/Images/header-slides/Dracula 3.jpg';
 import Home_3 from '../Assets/Images/header-slides/EDM AAB 3.jpg';
-import Home_4 from '../Assets/Images/home/img-4.jpg';
+import Home_4 from '../Assets/Images/header-slides/Isuzu (1 of 1)-2.jpg';
 import Home_5 from '../Assets/Images/header-slides/Dracula 4.jpg';
 import Home_6 from '../Assets/Images/header-slides/BOXING TV 1.JPG';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -71,6 +71,11 @@ class Header extends Component {
                                         <img src={Home_5} alt=""/>
                                     </a>
                                 </li> */}
+                                <li className="partners">
+                                    <a href="#partners">
+                                        <img src={Home_4} alt="" />
+                                    </a>
+                                </li>
                                 <li className="contact">
                                     <a href="#contact">
                                         <img src={Home_6} alt=""/>

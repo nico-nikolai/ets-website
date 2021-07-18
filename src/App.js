@@ -22,8 +22,8 @@ function App() {
             <Banner/>
             <Carousel />
             <About/>
-            <Service/>
             <Manifest/>
+            <Service/>
             <Partners />
             <Contact/>
             <Footer/>

@@ -17,11 +17,11 @@ class Banner extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col col-md-8 col-sm-12 slide-caption">
-                                    <div className="slide-subtitle">
-                                        <h4>We are ETS</h4>
-                                    </div>
+                                    {/* <div className="slide-subtitle">
+                                        <h4>We are Event Technology Services</h4>
+                                    </div> */}
                                     <div className="slide-title">
-                                        <h2>Light That Shit Up!</h2>
+                                        <h2>We are Event Technology Services</h2>
                                     </div>
                                     <div className="btns">
                                         <a href="#contact" className="theme-btn go-contact-area">Contact Us</a>

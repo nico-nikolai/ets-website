@@ -13,8 +13,8 @@ class About extends Component {
                                     <span>Professional Lighting</span>
                                     <h2>About Us</h2>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</p>
-                                <p>There isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary you need to be sure</p>
+                                <p>Event Technology Service combines state of the art equipment with passionate designers and technicians to provide production solutions that bring the audience to it’s feet every show.</p>
+                                <p>Based in Albuquerque, NM, ETS services New Mexico and the great Southwest.</p>
                                 
                                 {/* <div className="btns">
                                     <a href="#" className="theme-btn">Meet Our Team</a>
